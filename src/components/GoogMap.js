@@ -10,7 +10,7 @@ const containerStyle = {
 function GoogMap(props) {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyAKBOiwg568xib10oqT3me5fM871x6bnMA"
+    googleMapsApiKey: `{process.env.REACT_APP_MAP_API_KEY}`
   })
 
   const [map, setMap] = React.useState(null)
